@@ -22,7 +22,7 @@ def parse_args():
     parser.add_argument('--model_name', type=str, default='Liconvformer', help='the name of the model', choices=[
         'Liconvformer', 'CLFormer', 'convoformer_v1_small', 'mcswint',
          'MobileNet', 'MobileNetV2', 'ResNet18', 'MSResNet'])
-    parser.add_argument('--save_dataset', type=bool, default=True, help='whether saving the dataset')
+    parser.add_argument('--save_dataset', type=bool, default=False, help='whether saving the dataset')
     parser.add_argument('--normalize_type', type=str, default='0-1', help='data normalization methods',
                         choices=['0-1', '-1-1', 'mean-std'])
     parser.add_argument('--num_workers', type=int, default=0, help='the number of training process')
